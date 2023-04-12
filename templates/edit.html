@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/styleedit.css">
+</head>
+<body>
+    
+<!-- NAVIGATION PANEL -->
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Nota</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="col">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Explore</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Peoples
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Find</a></li>
+              <li><a class="dropdown-item" href="#">Subscribed</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col">
+        <div class="row align-items-center">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+            <form class="d-flex flex-grow-1 navbar-search" role="search">
+                <!-- <div class=""> -->
+                <input class="form-control me-2" type="search" placeholder="Search notes" aria-label="Search">
+            <!-- </div> -->
+                <button class="btn" type="submit"><i class="las la-search"></i></button>
+            </form>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="las la-user"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  
+
+<!-- NAVIGATION PANEL -->
+
+
+
+
+
+
+
+
+
+
+
+	<div id="toolbar">
+		<button id="bold-btn">B</button>
+		<button id="italic-btn">I</button>
+		<button id="underline-btn">U</button>
+		<select id="font-family-select">
+			<option value="Arial">Arial</option>
+			<option value="Verdana">Verdana</option>
+			<option value="Times New Roman">Times New Roman</option>
+		</select>
+		<select id="font-size-select">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+		</select>
+		<button id="link-btn">Link</button>
+		<input type="file" id="image-input" accept=".jpg,.jpeg,.bmp" style="display: none;">
+		<button id="image-btn">Image</button>
+		<button id="save-btn">Save</button>
+	</div>
+	<div id="editor" contenteditable></div>
+	<script src="../scripts/script.js"></script>
+</body>
+</html>

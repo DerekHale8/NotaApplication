@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+
+
+
+
+
+
+	<div id="toolbar">
+		<button id="bold-btn">B</button>
+		<button id="italic-btn">I</button>
+		<button id="underline-btn">U</button>
+		<select id="font-family-select">
+			<option value="Arial">Arial</option>
+			<option value="Verdana">Verdana</option>
+			<option value="Times New Roman">Times New Roman</option>
+		</select>
+		<select id="font-size-select">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+		</select>
+		<button id="link-btn">Link</button>
+		<input type="file" id="image-input" accept=".jpg,.jpeg,.bmp" style="display: none;">
+		<button id="image-btn">Image</button>
+		<button id="save-btn">Save</button>
+	</div>
+	<div id="editor" contenteditable><%= note.text || '' %></div>
+	<script src="/script.js"></script>
+</body>
+</html>

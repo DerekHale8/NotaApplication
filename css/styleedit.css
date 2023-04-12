@@ -1,0 +1,36 @@
+#editor {
+	min-height: 640px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+}
+
+#toolbar {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #dee2e6;
+	margin-bottom: 20px;
+}
+
+select, button, label {
+	margin-right: 10px;
+}
+
+#image-label {
+	cursor: pointer;
+}
+
+#editor img {
+	max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    resize: both;
+    overflow: auto;
+}

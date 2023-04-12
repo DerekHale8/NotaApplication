@@ -1,0 +1,104 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    min-width: 320px;
+}
+
+img {
+    
+    height: auto;
+}
+
+section {
+    padding:  50px 0;
+}
+
+a {
+    color:#111;
+}
+
+a:hover {
+    color: green;
+}
+
+/* Header */
+
+
+.navbar-nav .nav-link{
+    color:black;
+   
+}
+
+.navbar-nav .nav-link:hover{
+    color:rgb(51, 148, 16);
+   
+}
+
+.navbar-nav .dropdown-menu{
+    right: 0;
+    left:auto;
+}
+
+.la, .las{
+    font-size: 32px;
+}
+
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: rgb(51, 148, 16);
+    height: 2px;
+    transition: all 0.3s;
+    transform: scale(0);
+}
+
+
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+
+/*NAVBARSEARCH*/
+/* 
+.navbar-search{
+    height: 40px;
+} 
+*/
+
+/* Header */
+
+/* Body */
+
+.d-flex .note-search input{
+    display: 800px;
+}
+
+.vl {
+    border-left: 2px solid rgb(0, 0, 0);
+    height:100px;
+
+}
+
+.btn-new-note{
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.la-plus, .las{
+    font-size: 24px;
+}
+
+.card-body {
+    max-height: 240px;
+    overflow: auto;
+}
+/* Body */
