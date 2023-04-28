@@ -97,8 +97,19 @@ a:hover {
     font-size: 24px;
 }
 
-.card-body {
+.card-notes .card-body {
     max-height: 240px;
     overflow: auto;
+}
+
+.reg-link-label {
+    color:lightskyblue;
+    font-size: 16px;
+    position: relative;
+    left: 74%;
+}
+
+.reg-link-label:hover {
+    color:lightskyblue;
 }
 /* Body */

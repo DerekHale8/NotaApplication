@@ -9,7 +9,7 @@
 
 
 
-
+	
 	<div id="toolbar">
 		<button id="bold-btn">B</button>
 		<button id="italic-btn">I</button>
@@ -31,9 +31,26 @@
 		<button id="link-btn">Link</button>
 		<input type="file" id="image-input" accept=".jpg,.jpeg,.bmp" style="display: none;">
 		<button id="image-btn">Image</button>
-		<button id="save-btn">Save</button>
+		<button id="save-btn" data-note-id="<%= note.id %>">Save</button>
 	</div>
-	<div id="editor" contenteditable><%= note.text || '' %></div>
+	
+	<div id="editor"[innerHTML] contenteditable><%- note.text || '' %></div>
+
 	<script src="/script.js"></script>
+	<script>
+
+		// const editor = document.getElementById('editor');
+		// editor.innerHTML=note
+
+		// Add event listener for saving content
+		const saveBtn = document.getElementById('save-btn');
+		saveBtn.addEventListener('click', () => {
+		  const content = editor.innerHTML;
+		  const noteId = saveBtn.getAttribute('data-note-id');
+		  saveContent(content,noteId);
+		  //saveContent(content);
+		  
+		});
+		</script>
 </body>
 </html>

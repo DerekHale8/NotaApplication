@@ -81,6 +81,33 @@ editor.addEventListener('mousedown', (event) => {
 const saveBtn = document.getElementById('save-btn');
 saveBtn.addEventListener('click', () => {
   const content = editor.innerHTML;
-  saveContent(content);
+  //const noteId = 8;
+  const noteId = saveBtn.getAttribute('data-note-id');
+  saveContent(content,noteId);
 });
 
+
+// Function to send content to the server
+const saveContent = (content,idNote) => {
+    // Make a POST request to the server to save the content
+    fetch('/save', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ content: content,idNote: idNote })
+    })
+    .then(response => {
+        if (response.ok) {
+            // Content saved successfully
+            console.log('Content saved successfully');
+        } else {
+            // Handle error response
+            console.error('Failed to save content');
+        }
+    })
+    .catch(error => {
+        // Handle network error
+        console.error('Failed to save content', error);
+    });
+};
